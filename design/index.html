@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>UpworkPro Auth &amp; Dashboard UI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">UpworkPro submission</p>
+          <h1>
+            Auth experience designed for confident creatives and agencies
+          </h1>
+          <p class="lead">
+            A cohesive login, registration, and dashboard presentation, ready to
+            ship into your UpworkPro project atom. Subtle motion, high-contrast
+            CTA, and real-world dashboard stats to help buyers see the tangible
+            value immediately.
+          </p>
+          <div class="header-buttons">
+            <button class="btn primary">Book a walkthrough</button>
+            <button class="btn ghost">Share with client</button>
+          </div>
+        </div>
+        <div class="hero-pill">
+          <p>Trusted by 120+ freelance teams</p>
+          <strong>4.9/5 client satisfaction</strong>
+        </div>
+      </header>
+
+      <section class="panel-grid">
+        <article class="panel card login-panel">
+          <div class="panel-header">
+            <p class="eyebrow">Secure access</p>
+            <h2>Login</h2>
+          </div>
+          <form class="form">
+            <label>
+              Email address
+              <input type="email" placeholder="you@studio.com" required />
+            </label>
+            <label>
+              Password
+              <input type="password" placeholder="••••••••" required />
+            </label>
+            <div class="form-foot">
+              <label class="remember">
+                <input type="checkbox" /> Keep me signed in
+              </label>
+              <a href="#">Forgot password?</a>
+            </div>
+            <button class="btn primary" type="submit">Sign in</button>
+            <p class="micro">Multi-factor authentication ready.</p>
+          </form>
+        </article>
+
+        <article class="panel card register-panel">
+          <div class="panel-header">
+            <p class="eyebrow">Build your team</p>
+            <h2>Create an account</h2>
+          </div>
+          <form class="form">
+            <label>
+              Full name
+              <input type="text" placeholder="Jordan Rivera" required />
+            </label>
+            <label>
+              Workspace name
+              <input type="text" placeholder="Rivera Studio" />
+            </label>
+            <label>
+              Email address
+              <input type="email" placeholder="studio@designs.com" required />
+            </label>
+            <label>
+              Password
+              <input type="password" placeholder="Create a secure password" required />
+            </label>
+            <button class="btn neutral" type="submit">Start free trial</button>
+            <p class="micro">
+              Includes onboarding call, project template, and 10 seats.
+            </p>
+          </form>
+          <div class="badge-row">
+            <span>Identity verified</span>
+            <span>Team-ready</span>
+            <span>GDPR compliant</span>
+          </div>
+        </article>
+
+        <article class="panel card dashboard-panel">
+          <div class="panel-header">
+            <p class="eyebrow">Live dashboard</p>
+            <h2>Quarterly pulse</h2>
+          </div>
+          <div class="stats-grid">
+            <div>
+              <strong>$12,450</strong>
+              <p>Revenue (last 30d)</p>
+            </div>
+            <div>
+              <strong>48</strong>
+              <p>Active proposals</p>
+            </div>
+            <div>
+              <strong>12</strong>
+              <p>Approved projects</p>
+            </div>
+          </div>
+          <div class="pipeline">
+            <h3>Project pipeline</h3>
+            <div class="pipeline-row">
+              <span>Onboarding</span>
+              <span class="tag success">Two clients</span>
+            </div>
+            <div class="pipeline-row">
+              <span>Design sprint</span>
+              <span class="tag warning">3 weeks remaining</span>
+            </div>
+            <div class="pipeline-row">
+              <span>Quality review</span>
+              <span class="tag neutral">Round 2</span>
+            </div>
+          </div>
+          <div class="insight">
+            <p id="insight-text">Switch to see weekly velocity insights.</p>
+            <button class="btn ghost" id="insight-next">
+              Show next insight
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <p>Designed for UpworkPro pitches · Responsive by default · Figma layer ready</p>
+        <a href="https://github.com/maheshtecmantras/upworkpro-auth-dashboard" target="_blank" rel="noreferrer">View on GitHub</a>
+      </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
