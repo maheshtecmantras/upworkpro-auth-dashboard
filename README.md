@@ -1,15 +1,15 @@
 # UpworkPro Auth + Dashboard Design
 
-This repository showcases a polished UI concept for an UpworkPro project that includes:
+This repository now hosts a React + Vite prototype of the UpworkPro authentication and dashboard story. It keeps the original hero, login, registration, and dashboard ideas but renders every section as reusable React components.
 
-- **Login panel** with attention-grabbing gradient accent and branded copy.
-- **Landing page** refreshed with a green palette and a dedicated hero that speaks to UpworkPro buyers.
-- **Standalone registration page** (`design/register.html`) tailored for teams that want a clear onboarding funnel.
-- **Dashboard layout** with quick-stats, project pipeline, and action callouts to support demos or prototypes.
+## Development
+1. `npm install` to sync the dependencies.
+2. `npm run dev` to spin up the local Vite dev server on `localhost:5173`.
+3. `npm run build` to generate a production build (the static assets land in `dist/`).
 
-To preview the design:
-1. Open `design/index.html` in your browser (double-click or serve from a static hosting provider).
-2. Use the login form and highlight the dashboard widgets.
-3. Navigate to or open `design/register.html` to explore the separate registration experience.
+## Structure
+- `src/` contains the React entry point, the main `App`, and the CSS that mirrors the polished green theme.
+- `public/favicon.svg` seeds a simple brand mark for the browser tab.
+- `design/` still holds the legacy static HTML/CSS examples for quick reference or handoff.
 
-Feel free to fork and style it further for your specific UpworkPro proposal.
+Let me know if you want me to wire this up to real data, add routing, or include animation notes for UpworkPro stakeholders.
