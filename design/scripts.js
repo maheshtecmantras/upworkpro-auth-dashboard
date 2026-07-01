@@ -9,12 +9,15 @@ const insightText = document.getElementById("insight-text");
 const insightButton = document.getElementById("insight-next");
 
 function refreshInsight() {
+  if (!insightText || !insightButton) return;
   insightText.textContent = insights[currentInsight];
 }
 
-insightButton.addEventListener("click", () => {
-  currentInsight = (currentInsight + 1) % insights.length;
-  refreshInsight();
-});
+if (insightButton) {
+  insightButton.addEventListener("click", () => {
+    currentInsight = (currentInsight + 1) % insights.length;
+    refreshInsight();
+  });
+}
 
 refreshInsight();
